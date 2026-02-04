@@ -4,9 +4,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-import com.edutech.progressive.entity.Student;
+import org.springframework.stereotype.Service;
 
-public class StudentServiceImplArraylist  {
+import com.edutech.progressive.entity.Student;
+import com.edutech.progressive.service.StudentService;
+
+@Service
+public class StudentServiceImplArraylist  implements StudentService{
     public static List<Student> studentList=new ArrayList<>();
     public List<Student> getAllStudents(){
         return studentList;

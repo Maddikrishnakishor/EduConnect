@@ -4,9 +4,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.edutech.progressive.entity.Teacher;
 import com.edutech.progressive.service.TeacherService;
 
+@Service
 public class TeacherServiceImplArraylist  implements TeacherService{
     private static List<Teacher> teacherList=new ArrayList<>();
     @Override
